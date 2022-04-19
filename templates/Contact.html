@@ -1,0 +1,139 @@
+<html>
+
+<head>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    <title>Diabo Predict</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <style>
+        /* CSS code for button */
+
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-size: 17px;
+        }
+
+        body {
+            background: #c0392b;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #8e44ad, #c0392b);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #8e44ad, #c0392b); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            
+          }
+          .content {
+            position: fixed;
+            bottom: 0;
+            background: #0D0D0D;
+            color: #f1f1f1;
+            width: 100%;
+            padding: 5px;
+          }
+    </style>
+</head>
+
+<body>
+    <!-- Java Script -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+
+ 
+    <!-- Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" >
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/home">Diabo Predict</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link active" aria-current="page" href="/home">Home</a>
+              <a class="nav-link" href="/Info">About</a>
+              <a class="nav-link" href="/team">Team</a>
+              <a class="nav-link" href="/contact">Contact</a>
+            </div>
+          </div>
+          <form class="d-flex">
+            <h4 style="color:white;">Welcome {{name}} !</h4>
+            &nbsp&nbsp
+            <a class="btn btn-success" href="/signout" role="button">Sign Out</a>
+          </form>
+        </div>
+      </nav>
+
+
+    <br>
+    <br>
+    <div class="container" style="width: 600px;">
+     
+            <fieldset>
+                <div class="card card-body">
+                    <legend>
+                        <h1>Contact Us!</h1>
+                    </legend><br>
+
+
+                    <form class="row g-3"  action="https://formspree.io/f/mbjqnqwz"
+                    method="POST">
+                        <div class="col-md-6">
+                            <label  class="form-label">Name</label>
+                            <input type="text" class="form-control" name="name">
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label">Email</label>
+                            <input type="email" class="form-control" type="email" name="_replyto">
+                        </div>
+                        <div class="col-md-6">
+                            <label  class="form-label">Message</label>
+                            <textarea class="form-control" name="message" rows="3"></textarea>
+                        </div>
+                        &nbsp;
+
+                        <div class="col-12">
+                            <button type="submit" class="btn btn-success">Send</button>
+                        </div>
+                    </form>
+
+                </div>
+            </fieldset>
+      
+     
+    </div>
+    <br>
+
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <div class="content">
+
+        <p style="text-align: center;">Group 09 : Information Technology, G.H.Raisoni College of Engineering @Diabo Predict 2022</p>
+    
+      </div>
+
+</body>
+
+</html>
